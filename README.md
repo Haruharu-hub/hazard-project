@@ -22,6 +22,7 @@ conda create -n llava python=3.11.11 -y
 conda activate llava
 pip install --upgrade pip
 pip install -e .
+conda install -c conda-forge cairosvg
 ```
 
 ### 3. Install Ollama
@@ -47,12 +48,12 @@ ollama run llava
 
 ### 4. Download and Preprocess Images
 ```
-python download_images.py
+python src/download_images.py
 ```
 
 ### 5. Launch Streamlit App
 ```
-streamlit run app.py
+streamlit run src/app.py
 ```
 The app will open in your default browser at: http://localhost:8501
 
