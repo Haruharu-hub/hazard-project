@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "hazard-demo"
+name = "hazard-project"
 version = "0.1.0"
 description = "A hazard detection app using LLaVA and Streamlit"
 readme = "README.md"
@@ -20,6 +20,7 @@ dependencies = [
     "json_repair==0.41.0",
     "selenium==4.32.0",
     "webdriver-manager==4.0.2",
+    "cairosvg==2.8.2",
     "torch==2.1.2",
     "torchvision==0.16.2",
     "transformers==4.37.2",
@@ -43,3 +44,10 @@ dependencies = [
     "einops-exts==0.0.4",
     "timm==0.6.13",
 ]
+
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
