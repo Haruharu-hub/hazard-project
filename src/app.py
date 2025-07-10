@@ -238,7 +238,7 @@ if filtered_images:
 
     current = filtered_images[st.session_state.image_index]
     image = Image.open(current["path"])
-    image = image.resize((336, 336), Image.Resampling.LANCZOS)
+    # image = image.resize((336, 336), Image.Resampling.LANCZOS)
 
     col4, col5, col6 = st.columns([1, 2, 1]) 
 
