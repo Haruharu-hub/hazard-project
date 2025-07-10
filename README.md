@@ -114,7 +114,7 @@ image_dir = data/downloaded_images/traffic/Driving_Distraction_1/0000004.jpg
 
 image_url = https://cdn.hswstatic.com/gif/driving-dogs-lap.jpg
 
-| Domain  | Image Link                                                                 | Rule ID             | Label          |
+| Domain  | Image Link                                                                 | Rule             | Label          |
 |---------|-----------------------------------------------------------------------------|---------------------|----------------|
 | traffic | [Link](https://cdn.hswstatic.com/gif/driving-dogs-lap.jpg)                 | Driving Distraction | violated        |
 | traffic | [Link](https://cdn.hswstatic.com/gif/driving-dogs-lap.jpg)                 | Pedestrian Crossing | not applicable |
@@ -131,7 +131,7 @@ image_dir = data/downloaded_images/warehouse/Ergonomic_Lifting_1/0000002.jpg
 
 image_url = https://images.cisco-eagle.com/blog/wp-content/uploads/2020/05/Lifting-Boxes-Rack.jpg
 
-| Domain    | Image Link                                                                                   | Rule ID             | Label          |
+| Domain    | Image Link                                                                                   | Rule             | Label          |
 |-----------|-----------------------------------------------------------------------------------------------|---------------------|----------------|
 | warehouse | [Link](https://images.cisco-eagle.com/blog/wp-content/uploads/2020/05/Lifting-Boxes-Rack.jpg) | Ergonomic Lifting   | violated        |
 | warehouse | [Link](https://images.cisco-eagle.com/blog/wp-content/uploads/2020/05/Lifting-Boxes-Rack.jpg) | Forklift Use        | not applicable |
