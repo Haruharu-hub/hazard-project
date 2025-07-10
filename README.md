@@ -108,12 +108,37 @@ Images are collected and organized via URL links, stored under the `images_link`
 
 #### Example Annotation Formats in CSV:
 
-```csv
-domain, image_id, domain, rule_id, label
-warehouse, 0000001.jpg, ladder_use, complied
-warehouse, 0000001.jpg, surface_condition, violated
-warehouse, 0000001.jpg, forklift_use, not applicable
-```
+![Alt text](https://cdn.hswstatic.com/gif/driving-dogs-lap.jpg)
+
+image_dir = data/downloaded_images/traffic/Driving_Distraction_1/0000004.jpg
+
+image_url = https://cdn.hswstatic.com/gif/driving-dogs-lap.jpg
+
+| Domain  | Image Link                                                                 | Rule ID             | Label          |
+|---------|-----------------------------------------------------------------------------|---------------------|----------------|
+| traffic | [Link](https://cdn.hswstatic.com/gif/driving-dogs-lap.jpg)                 | Driving Distraction | violated        |
+| traffic | [Link](https://cdn.hswstatic.com/gif/driving-dogs-lap.jpg)                 | Pedestrian Crossing | not applicable |
+| traffic | [Link](https://cdn.hswstatic.com/gif/driving-dogs-lap.jpg)                 | Road Condition      | not applicable |
+| traffic | [Link](https://cdn.hswstatic.com/gif/driving-dogs-lap.jpg)                 | Traffic Rules       | not applicable |
+| traffic | [Link](https://cdn.hswstatic.com/gif/driving-dogs-lap.jpg)                 | Vehicle Load        | not applicable |
+
+
+Example of multiple rules applicable to a single image:
+
+![Alt text](https://images.cisco-eagle.com/blog/wp-content/uploads/2020/05/Lifting-Boxes-Rack.jpg)
+
+image_dir = data/downloaded_images/warehouse/Ergonomic_Lifting_1/0000002.jpg
+
+image_url = https://images.cisco-eagle.com/blog/wp-content/uploads/2020/05/Lifting-Boxes-Rack.jpg
+
+| Domain    | Image Link                                                                                   | Rule ID             | Label          |
+|-----------|-----------------------------------------------------------------------------------------------|---------------------|----------------|
+| warehouse | [Link](https://images.cisco-eagle.com/blog/wp-content/uploads/2020/05/Lifting-Boxes-Rack.jpg) | Ergonomic Lifting   | violated        |
+| warehouse | [Link](https://images.cisco-eagle.com/blog/wp-content/uploads/2020/05/Lifting-Boxes-Rack.jpg) | Forklift Use        | not applicable |
+| warehouse | [Link](https://images.cisco-eagle.com/blog/wp-content/uploads/2020/05/Lifting-Boxes-Rack.jpg) | Ladder Use          | not applicable |
+| warehouse | [Link](https://images.cisco-eagle.com/blog/wp-content/uploads/2020/05/Lifting-Boxes-Rack.jpg) | Protective Equipment | violated       |
+| warehouse | [Link](https://images.cisco-eagle.com/blog/wp-content/uploads/2020/05/Lifting-Boxes-Rack.jpg) | Surface Condition   | complied        |
+
 
 ### 5. Experimental Roadmap
 #### Phase 1: Data Expansion (🔴 High Priority)
