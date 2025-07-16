@@ -2,7 +2,6 @@ import os
 import re
 from collections import defaultdict
 
-# Your dataset root
 DATASET_ROOT = "data/processed_images"
 README_PATH = "README.md"
 SECTION_HEADER = "### 3. Current Dataset Statistics"
