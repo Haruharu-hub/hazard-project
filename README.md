@@ -77,23 +77,23 @@ Images are collected and organized via URL links, stored under the `images_link`
 
 | Domain      | Rule                  | Label Distribution |
 |-------------|-----------------------|---------------------|
-| Construction| Crane Use             | {0:10, 1:10}        |
-|             | Fire Risk             | {0:10, 1:10}        |
-|             | Ladder Use            | {0:10, 1:10}        |
-|             | Protective Equipment  | {0:10, 1:10}        |
-|             | Scaffolding Risk      | {0:10, 1:10}        |
-| Traffic     | Driving Distraction   | {0:10, 1:10}        |
-|             | Pedestrian Crossing   | {0:10, 1:10}        |
-|             | Road Condition        | {0:10, 1:10}        |
-|             | Traffic Rules         | {0:10, 1:10}        |
-|             | Vehicle Load          | {0:10, 1:10}        |
-| Warehouse   | Ergonomic Lifting     | {0:10, 1:10}        |
-|             | Forklift Use          | {0:10, 1:10}        |
-|             | Ladder Use            | {0:10, 1:10}        |
-|             | Protective Equipment  | {0:10, 1:10}        |
-|             | Surface Condition     | {0:10, 1:10}        |
+| Traffic    | Driving Distraction    | {0: 51, 1: 57}       |
+|            | Pedestrian Crossing    | {0: 53, 1: 53}       |
+|            | Road Condition         | {0: 50, 1: 60}       |
+|            | Traffic Rules          | {0: 49, 1: 49}       |
+|            | Vehicle Load           | {0: 51, 1: 50}       |
+| Construction| Crane Use              | {0: 10, 1: 10}       |
+|            | Fire Risk              | {0: 10, 1: 10}       |
+|            | Ladder Use             | {0: 10, 1: 11}       |
+|            | Protective Equipment   | {0: 10, 1: 10}       |
+|            | Scaffolding Risk       | {0: 10, 1: 10}       |
+| Warehouse  | Ergonomic Lifting      | {0: 10, 1: 10}       |
+|            | Forklift Use           | {0: 10, 1: 10}       |
+|            | Ladder Use             | {0: 10, 1: 10}       |
+|            | Protective Equipment   | {0: 10, 1: 10}       |
+|            | Surface Condition      | {0: 10, 1: 10}       |
 
-**Total images**: 300
+**Total images**: 724
 
 ### 4. Annotation Schema
 
