@@ -81,21 +81,21 @@ Images are collected and organized via URL links, stored under the `images_link`
 
 | Domain      | Rule                   | Downloaded | Processed | Matched | Label Distribution | Total |
 |-------------|------------------------|------------|-----------|---------|--------------------|-------|
-| Traffic     | Driving Distraction    | 109        | 107       | ❌     | 0: 50, 1: 57                | 107   |
-|             | Pedestrian Crossing    | 105        | 102       | ❌     | 0: 50, 1: 52                | 102   |
-|             | Road Condition         | 109        | 109       | ✅     | 0: 49, 1: 60                | 109   |
-|             | Traffic Rules          | 99         | 96        | ❌     | 0: 45, 1: 51                | 96    |
-|             | Vehicle Load           | 101        | 100       | ❌     | 0: 51, 1: 49                | 100   |
-| Construction| Crane Use              | 102        | 99        | ❌     | 0: 51, 1: 48                | 99    |
-|             | Fire Risk              | 111        | 111       | ✅     | 0: 55, 1: 56                | 111   |
-|             | Ladder Use             | 106        | 106       | ✅     | 0: 50, 1: 56                | 106   |
-|             | Protective Equipment   | 106        | 106       | ✅     | 0: 50, 1: 56                | 106   |
-|             | Scaffolding Risk       | 103        | 102       | ❌     | 0: 51, 1: 51                | 102   |
-| Warehouse   | Ergonomic Lifting      | 20         | 20        | ✅     | 0: 10, 1: 10                | 20    |
-|             | Forklift Use           | 20         | 20        | ✅     | 0: 10, 1: 10                | 20    |
-|             | Ladder Use             | 20         | 20        | ✅     | 0: 10, 1: 10                | 20    |
-|             | Protective Equipment   | 20         | 20        | ✅     | 0: 10, 1: 10                | 20    |
-|             | Surface Condition      | 20         | 20        | ✅     | 0: 10, 1: 10                | 20    |
+| Traffic     | Driving Distraction    | 109        | 107       | ❌     | 0: 50, 1: 57                | 514   |
+|             | Pedestrian Crossing    | 105        | 102       | ❌     | 0: 50, 1: 52                |       |
+|             | Road Condition         | 109        | 109       | ✅     | 0: 49, 1: 60                |       |
+|             | Traffic Rules          | 99         | 96        | ❌     | 0: 45, 1: 51                |       |
+|             | Vehicle Load           | 101        | 100       | ❌     | 0: 51, 1: 49                |       |
+| Construction| Crane Use              | 102        | 99        | ❌     | 0: 51, 1: 48                | 524   |
+|             | Fire Risk              | 111        | 111       | ✅     | 0: 55, 1: 56                |       |
+|             | Ladder Use             | 106        | 106       | ✅     | 0: 50, 1: 56                |       |
+|             | Protective Equipment   | 106        | 106       | ✅     | 0: 50, 1: 56                |       |
+|             | Scaffolding Risk       | 103        | 102       | ❌     | 0: 51, 1: 51                |       |
+| Warehouse   | Ergonomic Lifting      | 20         | 20        | ✅     | 0: 10, 1: 10                | 100   |
+|             | Forklift Use           | 20         | 20        | ✅     | 0: 10, 1: 10                |       |
+|             | Ladder Use             | 20         | 20        | ✅     | 0: 10, 1: 10                |       |
+|             | Protective Equipment   | 20         | 20        | ✅     | 0: 10, 1: 10                |       |
+|             | Surface Condition      | 20         | 20        | ✅     | 0: 10, 1: 10                |       |
 
 **Total images**: 1138
 
