@@ -86,8 +86,13 @@ def format_table(stats, total_images_per_domain):
 
     for domain, rules in stats.items():
         first = True
+
         domain_total = 0
-        
+
+        for rule, label_dist in sorted(rules.items()):
+            rule_label = f"{rule.replace(' ', '_')}"  
+            domain_total += processed_counts[domain].get(rule_label, 0)
+
         for rule, label_dist in sorted(rules.items()):
 
             rule_label = f"{rule.replace(' ', '_')}"  
@@ -96,11 +101,11 @@ def format_table(stats, total_images_per_domain):
             match = "✅" if downloaded == processed else "❌"
 
             dist_str = ", ".join(f"{lbl}: {cnt}" for lbl, cnt in sorted(label_dist.items()))
-            total = sum(label_dist.values())
-            domain_total += total
+            
+            domain_total_str = domain_total if first else ""
 
             domain_str = domain.capitalize() if first else ""
-            line = f"| {domain_str:<12}| {rule:<23}| {downloaded:<10} | {processed:<9} | {match:<5} | {dist_str:<27} | {total:<5} |"
+            line = f"| {domain_str:<12}| {rule:<23}| {downloaded:<10} | {processed:<9} | {match:<5} | {dist_str:<27} | {domain_total_str:<5} |"
             lines.append(line)
             first = False
 
