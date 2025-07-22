@@ -49,6 +49,8 @@ ollama run llava
 ### 4. Download and Preprocess Images
 ```
 python src/download_images.py
+python src/process_images.py
+
 ```
 
 ### 5. Launch Streamlit App
@@ -75,27 +77,38 @@ Images are collected and organized via URL links, stored under the `images_link`
 
 ### 3. Current Dataset Statistics
 
-| Domain      | Rule                  | Label Distribution |
-|-------------|-----------------------|---------------------|
-| Traffic    | Driving Distraction    | {0: 51, 1: 57}       |
-|            | Pedestrian Crossing    | {0: 53, 1: 53}       |
-|            | Road Condition         | {0: 50, 1: 60}       |
-|            | Traffic Rules          | {0: 49, 1: 49}       |
-|            | Vehicle Load           | {0: 51, 1: 50}       |
-| Construction| Crane Use              | {0: 10, 1: 10}       |
-|            | Fire Risk              | {0: 10, 1: 10}       |
-|            | Ladder Use             | {0: 10, 1: 11}       |
-|            | Protective Equipment   | {0: 10, 1: 10}       |
-|            | Scaffolding Risk       | {0: 10, 1: 10}       |
-| Warehouse  | Ergonomic Lifting      | {0: 10, 1: 10}       |
-|            | Forklift Use           | {0: 10, 1: 10}       |
-|            | Ladder Use             | {0: 10, 1: 10}       |
-|            | Protective Equipment   | {0: 10, 1: 10}       |
-|            | Surface Condition      | {0: 10, 1: 10}       |
+#### Images Statistics
 
-**Total images**: 724
+| Domain      | Rule                   | Label Distribution | Total |
+|-------------|------------------------|--------------------|-------|
+| Traffic     | Driving Distraction    | {0: 50, 1: 57}     | 514   |
+|             | Pedestrian Crossing    | {0: 50, 1: 52}     |       |
+|             | Road Condition         | {0: 49, 1: 60}     |       |
+|             | Traffic Rules          | {0: 45, 1: 51}     |       |
+|             | Vehicle Load           | {0: 51, 1: 49}     |       |
+| Construction| Crane Use              | {0: 10, 1: 10}     | 101   |
+|             | Fire Risk              | {0: 10, 1: 10}     |       |
+|             | Ladder Use             | {0: 10, 1: 11}     |       |
+|             | Protective Equipment   | {0: 10, 1: 10}     |       |
+|             | Scaffolding Risk       | {0: 10, 1: 10}     |       |
+| Warehouse   | Ergonomic Lifting      | {0: 10, 1: 10}     | 100   |
+|             | Forklift Use           | {0: 10, 1: 10}     |       |
+|             | Ladder Use             | {0: 10, 1: 10}     |       |
+|             | Protective Equipment   | {0: 10, 1: 10}     |       |
+|             | Surface Condition      | {0: 10, 1: 10}     |       |
 
-### 4. Annotation Schema
+**Total images**: 715
+
+#### Annotation Statistics
+
+| Domain  | Rule                | Complied | Not Applicable | Violated | Total |
+|---------|---------------------|----------|----------------|----------|-------|
+| Traffic | Driving Distraction  |    55    |      401       |    58    |  514  |
+|         | Pedestrian Crossing  |    58    |      401       |    55    |  514  |
+|         | Road Condition       |   204    |      237       |    73    |  514  |
+|         | Traffic Rules        |    98    |      338       |    78    |  514  |
+|         | Vehicle Load         |   186    |      277       |    51    |  514  |
+| **Total** |                     |   601    |      1654      |   315    | 2570  |
 
 #### Current Annotation:
 - Per-rule binary label based on image link filename as described above
