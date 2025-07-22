@@ -82,12 +82,16 @@ def process_all_links(src_root='data/downloaded_images', dst_root = 'data/proces
                         processed_img = resize_and_crop(img) 
                         processed_img.save(dst_path)
                         processed_count += 1
-                        print(f"Processed: {src_path} -> {dst_path}")
+                        # print(f"Processed: {src_path} -> {dst_path}")
                 except Exception as e:
                     print(f"Failed to process {src_path}: {e}")
+            elif filename.startswith('000'):
+                src_path = os.path.join(dirpath, filename)
+                skipped_count += 1
+                print(f"Failed to process format {src_path}")
 
     print(f"\nTotal processed images: {processed_count}")
-    print(f"Total duplicates skipped: {skipped_count}")
+    print(f"Total skipped: {skipped_count}")
 
 if __name__ == '__main__':
     process_all_links()
