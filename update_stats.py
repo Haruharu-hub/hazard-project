@@ -3,25 +3,58 @@ import re
 from collections import defaultdict
 import pandas as pd
 
-DATASET_ROOT = "data/processed_images"
+DOWNLOADED_DIR = "data/downloaded_images"
+PROCESSED_DIR = "data/processed_images"
 README_PATH = "README.md"
 SECTION_HEADER = "#### Images Statistics"
 ANNOTATION_SECTION_HEADER = "#### Annotation Statistics"
-LABELS = {0: "Complied", 1: "Not Applicable", 2: "Violated"} 
+LABELS = {0: "Complied", 1: "Violated", 2: "Not Applicable"} 
 
 def normalize_rule(rule_label):
     *rule_parts, label = rule_label.split('_')
     rule = ' '.join(rule_parts).replace('-', ' ').title()
     return rule, int(label)
 
+from collections import defaultdict
+import os
+
+def count_images_by_domain_and_rule(root_dir):
+    counts = defaultdict(lambda: defaultdict(int))
+
+    for domain in os.listdir(root_dir):
+        domain_path = os.path.join(root_dir, domain)
+        if not os.path.isdir(domain_path):
+            continue
+
+        for rule_folder in os.listdir(domain_path):
+            rule_path = os.path.join(domain_path, rule_folder)
+            if not os.path.isdir(rule_path):
+                continue
+
+            rule_parts = rule_folder.split('_')
+            if rule_parts[-1].isdigit():
+                rule_name = '_'.join(rule_parts[:-1])
+            else:
+                rule_name = rule_folder
+
+            count = len([
+                f for f in os.listdir(rule_path)
+                if os.path.isfile(os.path.join(rule_path, f)) and f.lower().startswith('000')
+            ])
+
+            counts[domain][rule_name] += count
+
+    return counts
+
+
 def collect_stats():
     stats = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
     total_images = 0
     total_images_per_domain = dict()
 
-    for domain in os.listdir(DATASET_ROOT):
+    for domain in os.listdir(PROCESSED_DIR):
         total_images_per_domain[domain] = 0
-        domain_path = os.path.join(DATASET_ROOT, domain)
+        domain_path = os.path.join(PROCESSED_DIR, domain)
         if not os.path.isdir(domain_path):
             continue
 
@@ -42,19 +75,35 @@ def collect_stats():
     return stats, total_images_per_domain, total_images
 
 def format_table(stats, total_images_per_domain):
+
+    processed_counts = count_images_by_domain_and_rule(PROCESSED_DIR)
+    downloaded_counts = count_images_by_domain_and_rule(DOWNLOADED_DIR)
+
     lines = [
-        "| Domain      | Rule                   | Label Distribution | Total |",
-        "|-------------|------------------------|--------------------|-------|"
+        "| Domain      | Rule                   | Downloaded | Processed | Matched | Label Distribution | Total |",
+        "|-------------|------------------------|------------|-----------|---------|--------------------|-------|"
     ]
+
     for domain, rules in stats.items():
         first = True
+        domain_total = 0
+        
         for rule, label_dist in sorted(rules.items()):
+
+            rule_label = f"{rule.replace(' ', '_')}"  
+            downloaded = downloaded_counts[domain].get(rule_label, 0)
+            processed = processed_counts[domain].get(rule_label, 0)
+            match = "✅" if downloaded == processed else "❌"
+
+            dist_str = ", ".join(f"{lbl}: {cnt}" for lbl, cnt in sorted(label_dist.items()))
+            total = sum(label_dist.values())
+            domain_total += total
+
             domain_str = domain.capitalize() if first else ""
-            dist_str = f"{dict(sorted(label_dist.items()))}"
-            total_str = total_images_per_domain[domain] if first else ""
-            line = f"| {domain_str:<12}| {rule:<23}| {dist_str:<18} | {total_str:<6}|"
+            line = f"| {domain_str:<12}| {rule:<23}| {downloaded:<10} | {processed:<9} | {match:<5} | {dist_str:<27} | {total:<5} |"
             lines.append(line)
             first = False
+
     return "\n".join(lines)
 
 def create_annotation_table():
