@@ -86,18 +86,18 @@ Images are collected and organized via URL links, stored under the `images_link`
 |             | Road Condition         | {0: 49, 1: 60}     |       |
 |             | Traffic Rules          | {0: 45, 1: 51}     |       |
 |             | Vehicle Load           | {0: 51, 1: 49}     |       |
-| Construction| Crane Use              | {0: 10, 1: 10}     | 101   |
-|             | Fire Risk              | {0: 10, 1: 10}     |       |
-|             | Ladder Use             | {0: 10, 1: 11}     |       |
-|             | Protective Equipment   | {0: 10, 1: 10}     |       |
-|             | Scaffolding Risk       | {0: 10, 1: 10}     |       |
+| Construction| Crane Use              | {0: 51, 1: 48}     | 524   |
+|             | Fire Risk              | {0: 55, 1: 56}     |       |
+|             | Ladder Use             | {0: 50, 1: 56}     |       |
+|             | Protective Equipment   | {0: 50, 1: 56}     |       |
+|             | Scaffolding Risk       | {0: 51, 1: 51}     |       |
 | Warehouse   | Ergonomic Lifting      | {0: 10, 1: 10}     | 100   |
 |             | Forklift Use           | {0: 10, 1: 10}     |       |
 |             | Ladder Use             | {0: 10, 1: 10}     |       |
 |             | Protective Equipment   | {0: 10, 1: 10}     |       |
 |             | Surface Condition      | {0: 10, 1: 10}     |       |
 
-**Total images**: 715
+**Total images**: 1138
 
 #### Annotation Statistics
 
