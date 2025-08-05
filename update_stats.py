@@ -5,6 +5,7 @@ import pandas as pd
 
 DOWNLOADED_DIR = "data/downloaded_images"
 PROCESSED_DIR = "data/processed_images"
+ANNOTATION_FILE = 'data/hazard-project-annotation-cleaned.csv'
 README_PATH = "README.md"
 SECTION_HEADER = "#### Images Statistics"
 ANNOTATION_SECTION_HEADER = "#### Annotation Statistics"
@@ -113,8 +114,9 @@ def format_table(stats, total_images_per_domain):
 
 def create_annotation_table():
 
-    df = pd.read_csv('data/hazard-project-annotation-cleaned.csv')
-    df = df[df['Note'].isna()].copy()
+    # df = pd.read_csv('data/hazard-project-annotation-cleaned.csv')
+    # df = df[df['Note'].isna()].copy()
+    df = pd.read_csv(ANNOTATION_FILE)
     grouped = df.groupby(['Domain', 'Rule'])['Label'].value_counts().unstack(fill_value=0)
 
     grouped['Total'] = grouped.sum(axis=1)
