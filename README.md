@@ -81,11 +81,11 @@ Images are collected and organized via URL links, stored under the `images_link`
 
 | Domain      | Rule                   | Downloaded | Processed | Matched | Label Distribution | Total |
 |-------------|------------------------|------------|-----------|---------|--------------------|-------|
-| Traffic     | Driving Distraction    | 109        | 107       | ❌     | 0: 50, 1: 57                | 514   |
-|             | Pedestrian Crossing    | 105        | 102       | ❌     | 0: 50, 1: 52                |       |
-|             | Road Condition         | 109        | 109       | ✅     | 0: 49, 1: 60                |       |
-|             | Traffic Rules          | 99         | 96        | ❌     | 0: 45, 1: 51                |       |
-|             | Vehicle Load           | 101        | 100       | ❌     | 0: 51, 1: 49                |       |
+| Traffic     | Driving Distraction    | 107        | 107       | ✅     | 0: 50, 1: 57                | 522   |
+|             | Pedestrian Crossing    | 102        | 102       | ✅     | 0: 50, 1: 52                |       |
+|             | Road Condition         | 110        | 110       | ✅     | 0: 50, 1: 60                |       |
+|             | Traffic Rules          | 101        | 101       | ✅     | 0: 50, 1: 51                |       |
+|             | Vehicle Load           | 102        | 102       | ✅     | 0: 51, 1: 51                |       |
 | Construction| Crane Use              | 102        | 99        | ❌     | 0: 51, 1: 48                | 524   |
 |             | Fire Risk              | 111        | 111       | ✅     | 0: 55, 1: 56                |       |
 |             | Ladder Use             | 106        | 106       | ✅     | 0: 50, 1: 56                |       |
@@ -97,18 +97,18 @@ Images are collected and organized via URL links, stored under the `images_link`
 |             | Protective Equipment   | 20         | 20        | ✅     | 0: 10, 1: 10                |       |
 |             | Surface Condition      | 20         | 20        | ✅     | 0: 10, 1: 10                |       |
 
-**Total images**: 1138
+**Total images**: 1146
 
 #### Annotation Statistics
 
 | Domain  | Rule                | Complied | Not Applicable | Violated | Total |
 |---------|---------------------|----------|----------------|----------|-------|
-| Traffic | Driving Distraction  |    55    |      401       |    58    |  514  |
-|         | Pedestrian Crossing  |    58    |      401       |    55    |  514  |
-|         | Road Condition       |   204    |      237       |    73    |  514  |
-|         | Traffic Rules        |    98    |      338       |    78    |  514  |
-|         | Vehicle Load         |   186    |      277       |    51    |  514  |
-| **Total** |                     |   601    |      1654      |   315    | 2570  |
+| Traffic | Driving Distraction  |    52    |      413       |    57    |  522  |
+|         | Pedestrian Crossing  |    56    |      408       |    58    |  522  |
+|         | Road Condition       |   326    |      114       |    82    |  522  |
+|         | Traffic Rules        |   104    |      340       |    78    |  522  |
+|         | Vehicle Load         |    62    |      408       |    51    |  522  |
+| **Total** |                     |   600    |      1683      |   326    | 2610  |
 
 #### Current Annotation:
 - Per-rule binary label based on image link filename as described above
