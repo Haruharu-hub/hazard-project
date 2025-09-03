@@ -5,7 +5,7 @@ import pandas as pd
 
 DOWNLOADED_DIR = "data/downloaded_images"
 PROCESSED_DIR = "data/processed_images"
-ANNOTATION_FILE = 'data/hazard-project-annotation-cleaned.csv'
+ANNOTATION_FILE = 'data/experimentation/hazard-project-annotation-cleaned.xlsx'
 README_PATH = "README.md"
 SECTION_HEADER = "#### Images Statistics"
 ANNOTATION_SECTION_HEADER = "#### Annotation Statistics"
@@ -116,7 +116,7 @@ def create_annotation_table():
 
     # df = pd.read_csv('data/hazard-project-annotation-cleaned.csv')
     # df = df[df['Note'].isna()].copy()
-    df = pd.read_csv(ANNOTATION_FILE)
+    df = pd.read_excel(ANNOTATION_FILE)
     grouped = df.groupby(['Domain', 'Rule'])['Label'].value_counts().unstack(fill_value=0)
 
     grouped['Total'] = grouped.sum(axis=1)
