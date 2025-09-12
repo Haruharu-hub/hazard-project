@@ -73,6 +73,8 @@ Rule 2: Traffic Rules
 * If traffic lights at an intersection or marked foot crossing are showing a red traffic light, a driver must not enter the intersection or marked foot crossing. [Road Safety Road Rules 2017 - reg 59]
 * A driver on the part of the road that is a service road (except a service road to which a two-way sign applies) must drive in the same direction. [Road Safety Road Rules 2017 - reg 136]
 * A person must not cause a hazard to any person or vehicle by opening a door of a vehicle leaving a door of a vehicle open, or getting off, or out of, a vehicle. [Road Safety Road Rules 2017 - reg 269]
+* A vehicle must travel within its lane and not straddle lane markings, travel in the same direction as traffic, or if parked, be parked in the same direction and parked neatly.
+* A vehicle must not be parked in, or travel on, the emergency lane, unless in an emergency or when otherwise permitted.
 
 Rule 3: Pedestrian Crossing
 * Pedestrians are not allowed to cross the road if they are facing an amber or red traffic or pedestrian light. [Road Safety Road Rules 2017 Part 14]
