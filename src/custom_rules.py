@@ -61,10 +61,10 @@ rule_description = {
 "Traffic": {
 
 "Driving Distraction" : """
-* Distracted driving is any activity that diverts attention from driving, including talking or texting on your phone, eating and drinking, talking to people in your vehicle, fiddling with the stereo, entertainment or navigation system — anything that takes your attention away from the task of safe driving. [National Highway Traffic Safety Administration]
-* A person must not drive a vehicle if a person or an animal is in the driver's lap. [ROAD SAFETY ROAD RULES 2017 - REG 297 (1A)] 
-* The driver of a motor vehicle must not touch a portable device in the motor vehicle while the vehicle is moving, or is stationary but not parked. [ROAD SAFETY ROAD RULES 2017 - REG 304J (1)]
-* A person must not drive a fatigue-regulated heavy vehicle on a road while the person is impaired by fatigue. [HEAVY VEHICLE NATIONAL LAW (ACT) - SECT 228 (1)]""",
+* Distracted driving: Distracted driving is any activity that diverts attention from driving, including talking or texting on your phone, eating and drinking, talking to people in your vehicle, fiddling with the stereo, entertainment or navigation system — anything that takes your attention away from the task of safe driving. [National Highway Traffic Safety Administration]
+* Driver to have proper control of a vehicle etc.: A person must not drive a vehicle if a person or an animal is in the driver's lap. [ROAD SAFETY ROAD RULES 2017 - REG 297 (1A)] 
+* Touching or looking at portable devices in motor vehicles: The driver of a motor vehicle must not touch a portable device in the motor vehicle while the vehicle is moving, or is stationary but not parked. [ROAD SAFETY ROAD RULES 2017 - REG 304J (1)]
+* Duty of driver to avoid driving while fatigued: A person must not drive a fatigue-regulated heavy vehicle on a road while the person is impaired by fatigue. [HEAVY VEHICLE NATIONAL LAW (ACT) - SECT 228 (1)]""",
 
 "Traffic Rules" : """
 * Giving way at a pedestrian crossing: A driver must give way to any pedestrian on or entering a pedestrian crossing. [ROAD SAFETY ROAD RULES 2017 - REG 81 (2)]
@@ -75,18 +75,18 @@ rule_description = {
 * Driving within a single marked lane or line of traffic: A driver on a multi-lane road must drive so the driver's vehicle is completely in a marked lane [ROAD SAFETY ROAD RULES 2017 - REG 146 (1)]""",
 
 "Pedestrian Crossing" : """
-* A pedestrian crossing a road— (a) must cross by the shortest safe route; and (b) must not stay on the road longer than necessary to cross the road safely. [ROAD SAFETY ROAD RULES 2017 - REG 230 (1)]
-* If the pedestrian lights show a red pedestrian light and the pedestrian has not already started crossing the intersection or road, the pedestrian must not start to cross until the pedestrian lights change to green. [ROAD SAFETY ROAD RULES 2017 - REG 231 (2)]
-* A pedestrian must not cause a traffic hazard by moving into the path of a driver. [ROAD SAFETY ROAD RULES 2017 - REG 236 (1)]""",
+* Crossing a road—general: A pedestrian crossing a road— (a) must cross by the shortest safe route; and (b) must not stay on the road longer than necessary to cross the road safely. [ROAD SAFETY ROAD RULES 2017 - REG 230 (1)]
+* Crossing a road at pedestrian lights: If the pedestrian lights show a red pedestrian light and the pedestrian has not already started crossing the intersection or road, the pedestrian must not start to cross until the pedestrian lights change to green. [ROAD SAFETY ROAD RULES 2017 - REG 231 (2)]
+* Pedestrians not to cause a traffic hazard or obstruction: A pedestrian must not cause a traffic hazard by moving into the path of a driver. [ROAD SAFETY ROAD RULES 2017 - REG 236 (1)]""",
 
 "Road Condition" : """
-* A person who drives a motor vehicle on a highway must drive in a safe manner having regard to all the relevant factors. [ROAD SAFETY ACT 1986 - SECT 17A (1)] 
+* Obligations of road users: A person who drives a motor vehicle on a highway must drive in a safe manner having regard to all the relevant factors. [ROAD SAFETY ACT 1986 - SECT 17A (1)] 
 * The relevant factors include the following—(a) the physical characteristics of the road; (b) the prevailing weather conditions; (c) the level of visibility; (d) the condition of any vehicle the person is driving or riding on the highway; (e) the prevailing traffic conditions; (f) the relevant road laws and advisory signs; (g) the physical and mental condition of the driver or road user. [ROAD SAFETY ACT 1986 - SECT 17A (2A)]
-* A person must not use a relevant vehicle in a hazardous area unless the person holds a current hazardous area authority. [ROAD SAFETY (VEHICLES) REGULATIONS 2021 - REG 299]""",
+* Relevant vehicle not to be used in hazardous area without hazardous area authority: A person must not use a relevant vehicle in a hazardous area unless the person holds a current hazardous area authority. [ROAD SAFETY (VEHICLES) REGULATIONS 2021 - REG 299]""",
 
 "Vehicle Load": """
-* A load-carrying vehicle must not carry more than 1 large indivisible item unless— (a) the vehicle together with its load complies with the general mass limits; and (b) the vehicle carrying more than 1 large indivisible item does not cause the vehicle together with its load to exceed a prescribed dimension requirement that would not be exceeded if the vehicle carried only 1 of the large indivisible items. [HEAVY VEHICLE (MASS, DIMENSION AND LOADING) NATIONAL REGULATION - SCHEDULE 8 Division 2 - Load-carrying vehicles 13 (1)]
-* The following requirements apply to a vehicle that is carrying a load— (a) the load must be secured by a means that is appropriate to the vehicle and the nature of the load; (b) the load must be placed and secured on the vehicle in a way that prevents, or would be likely to prevent, the load or any part of the load from— (i) hanging or projecting from the vehicle; or (ii) becoming dislodged or falling from the vehicle; (c) the load must not be placed or secured on the vehicle in a way that makes the vehicle unstable; (d) the load must be placed and secured on the vehicle in compliance with the performance standards recommended in the Load Restraint Guide for Light Vehicles 2018, published by the National Transport Commission. [ROAD SAFETY (VEHICLES) REGULATIONS 2021 - REG 285]
+* Carrying goods in addition to a large indivisible items: A load-carrying vehicle must not carry more than 1 large indivisible item unless— (a) the vehicle together with its load complies with the general mass limits; and (b) the vehicle carrying more than 1 large indivisible item does not cause the vehicle together with its load to exceed a prescribed dimension requirement that would not be exceeded if the vehicle carried only 1 of the large indivisible items. [HEAVY VEHICLE (MASS, DIMENSION AND LOADING) NATIONAL REGULATION - SCHEDULE 8 Division 2 - Load-carrying vehicles 13 (1)]
+* Load restraint requirement: The following requirements apply to a vehicle that is carrying a load— (a) the load must be secured by a means that is appropriate to the vehicle and the nature of the load; (b) the load must be placed and secured on the vehicle in a way that prevents, or would be likely to prevent, the load or any part of the load from— (i) hanging or projecting from the vehicle; or (ii) becoming dislodged or falling from the vehicle; (c) the load must not be placed or secured on the vehicle in a way that makes the vehicle unstable; (d) the load must be placed and secured on the vehicle in compliance with the performance standards recommended in the Load Restraint Guide for Light Vehicles 2018, published by the National Transport Commission. [ROAD SAFETY (VEHICLES) REGULATIONS 2021 - REG 285]
 """,
 }
 }
