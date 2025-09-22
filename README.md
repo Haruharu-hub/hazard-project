@@ -91,13 +91,13 @@ Images are collected and organized via URL links, stored under the `images_link`
 |             | Ladder Use             | 106        | 106       | ✅     | 0: 50, 1: 56                |       |
 |             | Protective Equipment   | 103        | 103       | ✅     | 0: 50, 1: 53                |       |
 |             | Scaffolding Risk       | 100        | 100       | ✅     | 0: 50, 1: 50                |       |
-| Warehouse   | Ergonomic Lifting      | 103        | 103       | ✅     | 0: 52, 1: 51                | 512   |
-|             | Forklift Use           | 102        | 102       | ✅     | 0: 52, 1: 50                |       |
-|             | Ladder Use             | 103        | 103       | ✅     | 0: 52, 1: 51                |       |
-|             | Protective Equipment   | 103        | 103       | ✅     | 0: 52, 1: 51                |       |
-|             | Surface Condition      | 102        | 101       | ❌     | 0: 51, 1: 50                |       |
+| Warehouse   | Ergonomic Lifting      | 200        | 200       | ✅     | 0: 100, 1: 100              | 1000  |
+|             | Forklift Use           | 200        | 200       | ✅     | 0: 100, 1: 100              |       |
+|             | Ladder Use             | 200        | 200       | ✅     | 0: 100, 1: 100              |       |
+|             | Protective Equipment   | 200        | 200       | ✅     | 0: 100, 1: 100              |       |
+|             | Surface Condition      | 200        | 200       | ✅     | 0: 100, 1: 100              |       |
 
-**Total images**: 2040
+**Total images**: 2528
 
 #### Annotation Statistics
 
@@ -108,17 +108,17 @@ Images are collected and organized via URL links, stored under the `images_link`
 |         | Ladder Use           |    55    |      410       |    56    |  521  |
 |         | Protective Equipment |   223    |      150       |   148    |  521  |
 |         | Scaffolding Risk     |    65    |      397       |    59    |  521  |
-| Traffic | Driving Distraction  |   110    |      790       |   107    | 1007  |
-|         | Pedestrian Crossing  |   134    |      763       |   110    | 1007  |
-|         | Road Condition       |   629    |      210       |   168    | 1007  |
-|         | Traffic Rules        |   361    |      475       |   171    | 1007  |
-|         | Vehicle Load         |   158    |      746       |   103    | 1007  |
-| Warehouse | Ergonomic Lifting    |    78    |      358       |    77    |  513  |
-|         | Forklift Use         |    65    |      397       |    51    |  513  |
-|         | Ladder Use           |    54    |      400       |    59    |  513  |
-|         | Protective Equipment |   169    |       91       |   253    |  513  |
-|         | Surface Condition    |   265    |      145       |   103    |  513  |
-| **Total** |                     |   2490   |      6136      |   1579   | 10205 |
+| Traffic | Driving Distraction  |   112    |      788       |   107    | 1007  |
+|         | Pedestrian Crossing  |   136    |      760       |   111    | 1007  |
+|         | Road Condition       |   642    |      211       |   154    | 1007  |
+|         | Traffic Rules        |   385    |      453       |   169    | 1007  |
+|         | Vehicle Load         |   169    |      735       |   103    | 1007  |
+| Warehouse | Ergonomic Lifting    |   137    |      717       |   146    | 1000  |
+|         | Forklift Use         |   124    |      775       |   101    | 1000  |
+|         | Ladder Use           |   102    |      788       |   110    | 1000  |
+|         | Protective Equipment |   319    |      211       |   470    | 1000  |
+|         | Surface Condition    |   530    |      288       |   182    | 1000  |
+| **Total** |                     |   3123   |      7487      |   2030   | 12640 |
 
 #### Current Annotation:
 - Per-rule binary label based on image link filename as described above
