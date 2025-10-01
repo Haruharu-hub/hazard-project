@@ -86,28 +86,28 @@ Images are collected and organized via URL links, stored under the `images_link`
 |             | Road Condition         | 200        | 200       | ✅     | 0: 100, 1: 100              |       |
 |             | Traffic Rules          | 200        | 200       | ✅     | 0: 100, 1: 100              |       |
 |             | Vehicle Load           | 200        | 200       | ✅     | 0: 100, 1: 100              |       |
-| Construction| Crane Use              | 101        | 101       | ✅     | 0: 51, 1: 50                | 521   |
-|             | Fire Risk              | 111        | 111       | ✅     | 0: 55, 1: 56                |       |
-|             | Ladder Use             | 106        | 106       | ✅     | 0: 50, 1: 56                |       |
-|             | Protective Equipment   | 103        | 103       | ✅     | 0: 50, 1: 53                |       |
-|             | Scaffolding Risk       | 100        | 100       | ✅     | 0: 50, 1: 50                |       |
+| Construction| Crane Use              | 200        | 200       | ✅     | 0: 100, 1: 100              | 999   |
+|             | Fire Risk              | 200        | 200       | ✅     | 0: 100, 1: 100              |       |
+|             | Ladder Use             | 200        | 199       | ❌     | 0: 100, 1: 99               |       |
+|             | Protective Equipment   | 200        | 200       | ✅     | 0: 100, 1: 100              |       |
+|             | Scaffolding Risk       | 200        | 200       | ✅     | 0: 100, 1: 100              |       |
 | Warehouse   | Ergonomic Lifting      | 200        | 200       | ✅     | 0: 100, 1: 100              | 1000  |
 |             | Forklift Use           | 200        | 200       | ✅     | 0: 100, 1: 100              |       |
 |             | Ladder Use             | 200        | 200       | ✅     | 0: 100, 1: 100              |       |
 |             | Protective Equipment   | 200        | 200       | ✅     | 0: 100, 1: 100              |       |
 |             | Surface Condition      | 200        | 200       | ✅     | 0: 100, 1: 100              |       |
 
-**Total images**: 2528
+**Total images**: 3006
 
 #### Annotation Statistics
 
 | Domain  | Rule                | Complied | Not Applicable | Violated | Total |
 |---------|---------------------|----------|----------------|----------|-------|
-| Construction | Crane Use            |    62    |      408       |    51    |  521  |
-|         | Fire Risk            |    62    |      396       |    63    |  521  |
-|         | Ladder Use           |    55    |      410       |    56    |  521  |
-|         | Protective Equipment |   223    |      150       |   148    |  521  |
-|         | Scaffolding Risk     |    65    |      397       |    59    |  521  |
+| Construction | Crane Use            |   127    |      764       |   109    | 1000  |
+|         | Fire Risk            |   121    |      772       |   107    | 1000  |
+|         | Ladder Use           |   105    |      795       |   100    | 1000  |
+|         | Protective Equipment |   431    |      282       |   287    | 1000  |
+|         | Scaffolding Risk     |   128    |      734       |   138    | 1000  |
 | Traffic | Driving Distraction  |   112    |      788       |   107    | 1007  |
 |         | Pedestrian Crossing  |   136    |      760       |   111    | 1007  |
 |         | Road Condition       |   642    |      211       |   154    | 1007  |
@@ -118,7 +118,7 @@ Images are collected and organized via URL links, stored under the `images_link`
 |         | Ladder Use           |   102    |      788       |   110    | 1000  |
 |         | Protective Equipment |   319    |      211       |   470    | 1000  |
 |         | Surface Condition    |   530    |      288       |   182    | 1000  |
-| **Total** |                     |   3123   |      7487      |   2030   | 12640 |
+| **Total** |                     |   3568   |      9073      |   2394   | 15035 |
 
 #### Current Annotation:
 - Per-rule binary label based on image link filename as described above
