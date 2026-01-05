@@ -1,13 +1,10 @@
 import os
-import requests
 from PIL import Image
-import io
-import cairosvg
-from urllib.parse import urlparse
 from tqdm import tqdm
 import hashlib
+import argparse
 
-def resize_and_crop(img, size=(672, 672)):
+def resize_and_crop(img, size=(336, 336)):
     # Step 1: Resize while maintaining aspect ratio
     img_ratio = img.width / img.height
     target_ratio = size[0] / size[1]
@@ -42,7 +39,7 @@ def process_all_links(src_root='data/downloaded_images', dst_root = 'data/proces
     skipped_count = 0
     processed_count = 0
 
-    for dirpath, _, filenames in os.walk(src_root):
+    for dirpath, _, filenames in tqdm(os.walk(src_root)):
         seen_hashes = set()
         for filename in sorted(filenames):
             ext = os.path.splitext(filename)[1].lower()
@@ -52,7 +49,9 @@ def process_all_links(src_root='data/downloaded_images', dst_root = 'data/proces
                 relative_path = os.path.relpath(dirpath, src_root)
                 dst_dir = os.path.join(dst_root, relative_path)
                 os.makedirs(dst_dir, exist_ok=True)
-                dst_path = os.path.join(dst_dir, filename)
+
+                base_name = os.path.splitext(filename)[0]
+                dst_path = os.path.join(dst_dir, base_name + ".jpg")
 
                 try:
 
@@ -83,8 +82,10 @@ def process_all_links(src_root='data/downloaded_images', dst_root = 'data/proces
                         processed_img.save(dst_path)
                         processed_count += 1
                         # print(f"Processed: {src_path} -> {dst_path}")
+
                 except Exception as e:
                     print(f"Failed to process {src_path}: {e}")
+
             elif filename.startswith('000'):
                 src_path = os.path.join(dirpath, filename)
                 skipped_count += 1
@@ -94,6 +95,23 @@ def process_all_links(src_root='data/downloaded_images', dst_root = 'data/proces
     print(f"Total skipped: {skipped_count}")
 
 if __name__ == '__main__':
-    process_all_links()
+    
+    parser = argparse.ArgumentParser(description="Process and resize images.")
+    parser.add_argument(
+        "--src_root",
+        type=str,
+        default="data/downloaded_images",
+        help="Path to the source directory containing images."
+    )
+    parser.add_argument(
+        "--dst_root",
+        type=str,
+        default="data/processed_images",
+        help="Path to the destination directory for processed images."
+    )
+
+    args = parser.parse_args()
+    
+    process_all_links(args.src_root, args.dst_root)
 
 

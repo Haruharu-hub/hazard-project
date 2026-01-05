@@ -5,7 +5,6 @@ import io
 import cairosvg
 from urllib.parse import urlparse
 from tqdm import tqdm
-import hashlib
 
 def get_extension_and_format(url, content_type):
 
