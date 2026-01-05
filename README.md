@@ -103,11 +103,11 @@ Images are collected and organized via URL links, stored under the `images_link`
 
 | Domain  | Rule                | Complied | Not Applicable | Violated | Total |
 |---------|---------------------|----------|----------------|----------|-------|
-| Construction | Crane Use            |   127    |      764       |   109    | 1000  |
-|         | Fire Risk            |   121    |      772       |   107    | 1000  |
-|         | Ladder Use           |   105    |      795       |   100    | 1000  |
-|         | Protective Equipment |   431    |      282       |   287    | 1000  |
-|         | Scaffolding Risk     |   128    |      734       |   138    | 1000  |
+| Construction | Crane Use            |   127    |      763       |   109    |  999  |
+|         | Fire Risk            |   121    |      771       |   107    |  999  |
+|         | Ladder Use           |   105    |      795       |    99    |  999  |
+|         | Protective Equipment |   430    |      282       |   287    |  999  |
+|         | Scaffolding Risk     |   128    |      733       |   138    |  999  |
 | Traffic | Driving Distraction  |   112    |      788       |   107    | 1007  |
 |         | Pedestrian Crossing  |   136    |      760       |   111    | 1007  |
 |         | Road Condition       |   642    |      211       |   154    | 1007  |
@@ -118,7 +118,7 @@ Images are collected and organized via URL links, stored under the `images_link`
 |         | Ladder Use           |   102    |      788       |   110    | 1000  |
 |         | Protective Equipment |   319    |      211       |   470    | 1000  |
 |         | Surface Condition    |   530    |      288       |   182    | 1000  |
-| **Total** |                     |   3568   |      9073      |   2394   | 15035 |
+| **Total** |                     |   3567   |      9070      |   2393   | 15030 |
 
 #### Current Annotation:
 - Per-rule binary label based on image link filename as described above
