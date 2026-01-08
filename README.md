@@ -8,6 +8,10 @@ This is a hazard detection project that combines LLaVA's multimodal vision-langu
 - Preloaded images are analyzed using [LLaVA](https://github.com/haotian-liu/LLaVA), a large vision-language model, through a multi-step reasoning framework.
 - LLaVA generates a descriptive caption for each image, assesses and highlights possible hazards according to those rules.
 
+## ‼️ Data Availability
+Due to copyright restrictions, the data are not publicly available. Access may be granted upon reasonable request.
+Contact: Stephanie, szng@deakin.edu.au
+
 ## ⚙️ Setup Instructions
 
 ### 1. Clone this repository and navigate to main folder
@@ -131,11 +135,7 @@ Images are collected and organized via URL links, stored under the `images_link`
 
 #### Example Annotation Formats in CSV:
 
-![Alt text](https://cdn.hswstatic.com/gif/driving-dogs-lap.jpg)
-
 image_dir = data/downloaded_images/traffic/Driving_Distraction_1/0000004.jpg
-
-image_url = https://cdn.hswstatic.com/gif/driving-dogs-lap.jpg
 
 | Domain  | Image Link                                                                 | Rule             | Label          |
 |---------|-----------------------------------------------------------------------------|---------------------|----------------|
@@ -148,11 +148,7 @@ image_url = https://cdn.hswstatic.com/gif/driving-dogs-lap.jpg
 
 Example of multiple rules applicable to a single image:
 
-![Alt text](https://images.cisco-eagle.com/blog/wp-content/uploads/2020/05/Lifting-Boxes-Rack.jpg)
-
 image_dir = data/downloaded_images/warehouse/Ergonomic_Lifting_1/0000002.jpg
-
-image_url = https://images.cisco-eagle.com/blog/wp-content/uploads/2020/05/Lifting-Boxes-Rack.jpg
 
 | Domain    | Image Link                                                                                   | Rule             | Label          |
 |-----------|-----------------------------------------------------------------------------------------------|---------------------|----------------|
@@ -162,22 +158,3 @@ image_url = https://images.cisco-eagle.com/blog/wp-content/uploads/2020/05/Lifti
 | warehouse | [Link](https://images.cisco-eagle.com/blog/wp-content/uploads/2020/05/Lifting-Boxes-Rack.jpg) | Protective Equipment | violated       |
 | warehouse | [Link](https://images.cisco-eagle.com/blog/wp-content/uploads/2020/05/Lifting-Boxes-Rack.jpg) | Surface Condition   | complied        |
 
-
-### 5. Experimental Roadmap
-#### Phase 1: Data Expansion (🔴 High Priority)
-- Collect more images for each rule
-- Target: 100 images per rule, equally balanced (50 complied, 50 violated)
-- Ensure:
-    * Clear visibility of relevant hazards
-    * Objects of interest near center of image
-    * High resolution (≥ 672×672)
-    * Accepted formats: `.jpg`, `.jpeg`, `.png`
-
-#### Phase 2: Multi-rule Annotation (🔴 High Priority)
-- Label each image with all 5 rules from its domain in a csv file
-
-#### Phase 3: Descriptive Annotation (⏳ Low Priority)
-- Write natural language descriptions for each image for potential use in LLaVA fine-tuning
-
-#### Phase 4: Object-Level Annotation (⏳ Low Priority)
-- Label bounding boxes for key objects or hazards for potential training/evaluating object detectors like YOLO
